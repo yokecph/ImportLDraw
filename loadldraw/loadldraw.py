@@ -3454,7 +3454,7 @@ def addModifiers(ob):
     if Options.addBevelModifier:
         bevelModifier = ob.modifiers.new("Bevel", type='BEVEL')
         bevelModifier.width = Options.bevelWidth * Options.scale
-        bevelModifier.segments = 4
+        bevelModifier.segments = 1
         bevelModifier.profile = 0.5
         bevelModifier.limit_method = 'WEIGHT'
         bevelModifier.use_clamp_overlap = True
